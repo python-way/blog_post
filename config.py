@@ -3,6 +3,7 @@ import os
 class Config:
     SECRET_KEY = os.environ.get("SECRET_KEY") or 'my secret key'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    BLOG_ADMIN = 'fouad5@gmail.com'
 
     @staticmethod
     def init_app(app):
